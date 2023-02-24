@@ -1,0 +1,17 @@
+<h1>Home Page</h1>
+<ul>
+<li><a [routerLink]="['/sobre']">Sobre</a></li>
+<li><a [routerLink]="['/form']">Form</a></li>
+</ul>
+<p>Olá {{name}}, sua idade é {{age}}</p>
+<strong *ngIf="age > 18">Você já é adulto!</strong>
+
+<ul>
+    <li *ngFor="let movie of movies">{{movie}}</li>
+</ul>
+
+<h2 *ngIf="showTitle">Page Title</h2>
+
+<button (click)="toggleTitle()">Toggle</button>
+
+
